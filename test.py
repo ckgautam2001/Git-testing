@@ -19,5 +19,8 @@ def main():
     result = memServer1(req)
     print(result)
 
+def tempfun():
+    print('commit testing')
+
 if __name__ == "__main__":
     main()
