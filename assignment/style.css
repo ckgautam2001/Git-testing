@@ -1,0 +1,39 @@
+/* Basic responsive styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Carousel styles */
+.carousel img {
+    width: 100%;
+    display: none; /* Hide images by default */
+}
+
+/* Tabs styles */
+.tabs .tab {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.tabs .content {
+    display: none;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+/* Accordion view for mobile */
+@media (max-width: 600px) {
+    .tabs .content {
+        display: block; /* Always show content */
+    }
+    .tabs .tab:after {
+        content: '+';
+        float: right;
+    }
+    .tabs .tab.active:after {
+        content: '-';
+    }
+}

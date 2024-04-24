@@ -21,6 +21,7 @@ def main():
 
 def tempfun():
     print('commit testing')
-
+def tempfun2():
+    print('commit testing 2')
 if __name__ == "__main__":
     main()
